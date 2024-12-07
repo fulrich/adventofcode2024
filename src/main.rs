@@ -1,12 +1,10 @@
 mod locations;
 mod power_plant;
+mod toboggan_rental;
 
 fn main() {
-    println!("");
-    println!("Day 1");
-    locations::part_one();
-    locations::part_two();
-
+    locations::parse_locations();
     power_plant::load_power();
+    toboggan_rental::corrupted_data();
 }
 

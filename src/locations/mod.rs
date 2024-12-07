@@ -2,6 +2,13 @@ use std::fs::File;
 use std::io::{BufRead, BufReader};
 use std::error::Error;
 
+pub fn parse_locations() {
+    println!("");
+    println!("Day 1");
+    part_one();
+    part_two();
+}
+
 pub fn part_one() {
   let file = "assets/1_1_real.txt";
   let (first_list, second_list) = get_lists(file).unwrap();
